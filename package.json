@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-flexi-radio-button@git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+        "scope": null,
+        "escapedName": "react-native-flexi-radio-button",
+        "name": "react-native-flexi-radio-button",
+        "rawSpec": "git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+        "spec": "git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:thegamenicorus/react-native-flexi-radio-button.git",
+          "sshUrl": "git+ssh://git@github.com/thegamenicorus/react-native-flexi-radio-button.git",
+          "httpsUrl": "git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+          "gitUrl": "git://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+          "shortcut": "github:thegamenicorus/react-native-flexi-radio-button",
+          "directUrl": "https://raw.githubusercontent.com/thegamenicorus/react-native-flexi-radio-button/master/package.json"
+        }
+      },
+      "d:\\useabcv2\\SourceCode\\YSApp"
+    ]
+  ],
+  "_from": "git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+  "_id": "react-native-flexi-radio-button@0.2.1",
+  "_inCache": true,
+  "_location": "/react-native-flexi-radio-button",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-flexi-radio-button@git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+    "scope": null,
+    "escapedName": "react-native-flexi-radio-button",
+    "name": "react-native-flexi-radio-button",
+    "rawSpec": "git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+    "spec": "git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:thegamenicorus/react-native-flexi-radio-button.git",
+      "sshUrl": "git+ssh://git@github.com/thegamenicorus/react-native-flexi-radio-button.git",
+      "httpsUrl": "git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+      "gitUrl": "git://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+      "shortcut": "github:thegamenicorus/react-native-flexi-radio-button",
+      "directUrl": "https://raw.githubusercontent.com/thegamenicorus/react-native-flexi-radio-button/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git#e47e6731f4e26ef2086b094918c9b1afee51e42b",
+  "_shasum": "c4350920e1d8bcc135260f46773deef251426457",
+  "_shrinkwrap": null,
+  "_spec": "react-native-flexi-radio-button@git+https://github.com/thegamenicorus/react-native-flexi-radio-button.git",
+  "_where": "d:\\useabcv2\\SourceCode\\YSApp",
+  "author": {
+    "name": "Watcharachai Kanjaikaew",
+    "url": "https://github.com/thegamenicorus"
+  },
+  "bugs": {
+    "url": "https://github.com/thegamenicorus/react-native-flexi-radio-button/issues"
+  },
+  "dependencies": {},
+  "description": "Radio button component for React Native",
+  "devDependencies": {},
+  "gitHead": "e47e6731f4e26ef2086b094918c9b1afee51e42b",
+  "homepage": "https://github.com/thegamenicorus/react-native-flexi-radio-button",
+  "keywords": [
+    "react-native",
+    "radio",
+    "button",
+    "radio-button",
+    "react-component",
+    "ios",
+    "android",
+    "radio-buttons"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "react-native-flexi-radio-button",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react-native": ">= 0.25"
+  },
+  "readme": "# React Native Flexi Radio Button\r\nSimple and flexible Radio button for React Native App\r\n\r\n## Installation\r\n```\r\nnpm i react-native-flexi-radio-button --save\r\n```\r\n\r\n## Usage\r\n\r\n###Basic Example\r\n[see full basic example](https://github.com/thegamenicorus/react-native-flexi-radio-button/blob/master/examples/BasicExample/app.js)\r\n\r\n|![basic_example_ios](https://cloud.githubusercontent.com/assets/21040043/18545904/67b5476e-7b65-11e6-8fc4-8160b39a4ab0.gif)|![basic_example_android](https://cloud.githubusercontent.com/assets/21040043/18545908/69b22f5a-7b65-11e6-87d7-c82c0d3057dd.gif)|\r\n|---------------|----------|\r\n```jsx\r\n\r\nimport {RadioGroup, RadioButton} from 'react-native-flexi-radio-button'\r\n\r\nonSelect(index, value){\r\n  this.setState({\r\n    text: `Selected index: ${index} , value: ${value}`\r\n  })\r\n}\r\n\r\nrender(){\r\n  return(\r\n    <View style={styles.container}>\r\n    \r\n      <RadioGroup\r\n        onSelect = {(index, value) => this.onSelect(index, value)}\r\n      >\r\n        <RadioButton value={'item1'} >\r\n          <Text>This is item #1</Text>\r\n        </RadioButton>\r\n\r\n        <RadioButton value={'item2'}>\r\n          <Text>This is item #2</Text>\r\n        </RadioButton>\r\n\r\n        <RadioButton value={'item3'}>\r\n          <Text>This is item #3</Text>\r\n        </RadioButton>\r\n      </RadioGroup>\r\n      \r\n      <Text style={styles.text}>{this.state.text}</Text>\r\n      \r\n    </View>\r\n  )\r\n}\r\n```\r\n###Custom Example\r\n[see full custom example](https://github.com/thegamenicorus/react-native-flexi-radio-button/blob/master/examples/CustomExample/app.js)\r\n\r\n|![custom_ios](https://cloud.githubusercontent.com/assets/21040043/18546467/53bf8230-7b68-11e6-98f6-98899cce82b3.gif)|![cusom_android](https://cloud.githubusercontent.com/assets/21040043/18546744/cb912fce-7b69-11e6-9331-49e2337dcb04.gif)|\r\n|---------------|----------|\r\n\r\n\r\nmodify in render()\r\n\r\n```jsx\r\n<RadioGroup\r\n  size={24}\r\n  thickness={2}\r\n  color='#9575b2'\r\n  highlightColor='#ccc8b9'\r\n  selectedIndex={1}\r\n  onSelect = {(index, value) => this.onSelect(index, value)}\r\n>\r\n  <RadioButton \r\n    style={{alignItems:'center'}}\r\n    value='Yo!! I am a cat.' \r\n  >\r\n    <Image\r\n      style={{width:100, height: 100}}\r\n      source={{uri:'https://cloud.githubusercontent.com/assets/21040043/18446298/fa576974-794b-11e6-8430-b31b30846084.jpg'}}\r\n    />\r\n  </RadioButton>\r\n\r\n  <RadioButton \r\n    value='index1'\r\n  > \r\n    <Text>Start from item index #1</Text>\r\n  </RadioButton>\r\n\r\n  <RadioButton \r\n    value='red color'\r\n    color='red'\r\n  >\r\n    <Text>Red Dot</Text>\r\n  </RadioButton>\r\n\r\n  <RadioButton \r\n    value='green color'\r\n    color='green'\r\n  >\r\n    <Text>Green Dot</Text>\r\n  </RadioButton>\r\n\r\n  <RadioButton \r\n    value='blue color'\r\n    color='blue'\r\n  >\r\n    <Text>Blue Dot</Text>\r\n  </RadioButton>\r\n</RadioGroup>\r\n```\r\n\r\n### Configuration\r\n##### Radio Group:\r\n| Property | Type | Default | Description |\r\n|---------------|----------|-------------|----------------------------------------------------------------|\r\n| size | number | 20 | Size of the radio button |\r\n| thickness | number | 1 | width of radio button border |\r\n| color | string | '#007AFF' | color of radio button |\r\n| activeColor | string | null | color of radio button when selected|\r\n| highlightColor | string | null | background of radio button after selected |\r\n| selectedIndex | number | null | default selected index of radio group, can be changed to new value or to null for clear selection  |\r\n| style | object | null | Custom styles to be applied if supplied |\r\n| onSelect | function(index, value) | null | function to be invoked when radio button is selected |\r\n\r\n##### Radio Button:\r\n\r\n| Property | Type | Default | Description |\r\n|-----------|--------|---------|--------------------------------------------|\r\n| value | any |  null | value will be passed on callback `onSelect` as second argument  |\r\n| style | object | null | Styles to be applied on 'RadioButton' component |\r\n| color | string |  same as 'RadioGroup' component | color of radio dot  |\r\n| disabled | bool |  false | If true, disable all interactions for this component.  |\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thegamenicorus/react-native-flexi-radio-button.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.2.1"
+}
